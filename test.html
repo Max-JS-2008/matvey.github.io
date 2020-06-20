@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ТЕСТ</title>
+</head>
+<meta charset="utf-8">
+<style type="text/css">
+	h1 {
+		color: #fff;
+	}
+	button {
+		height: 50px;
+		width: 200px;
+	}
+</style>
+<script type="text/javascript">
+	let answercount = 0;
+	let q1 = false;
+	let q2 = false;
+	let q3 = false;
+	function vsetrue() {
+		
+		if (q1 == false) {
+			answercount = answercount + 1;
+			bbb3.style = 'background: green'
+		} else {
+			alert('ты уже ответил')
+		}
+		q1 = true;
+	}
+	function vsefalse() {
+		
+		if (q1 == false) {
+			bbb.style = 'background: red'
+		} else {
+			alert('ты уже ответил')
+		}
+		q1 = true;
+	}
+	function vsefalse_2(argument) {
+		if (q1 == false) {
+			bbb2.style = 'background: red'
+		} else {
+			alert('ты уже ответил')
+		}
+		q1 = true;	
+	}
+	function vsefalse2() {
+		if (q2 == false) {
+			bb2.style = 'background: red'
+		} else {
+			alert('ты уже ответил')
+		}
+		q2 = true;
+	}
+	function vsefalse2_2() {
+		if (q2 == false) {
+			bb3.style = 'background: red'
+		} else {
+			alert('ты уже ответил')
+		}
+		q2 = true;
+	}
+	function vsetrue2() {
+		if (q2 == false) {
+			answercount = answercount + 1;
+			bb.style = 'background: green'
+		} else {
+			alert('ты уже ответил')
+		}
+		q2 = true;
+	}
+	function vsetrue3() {
+		if (q3 == false) {
+			answercount = answercount + 1;
+			b.style = 'background: green'
+		} else {
+			alert('ты уже ответил')
+		}
+		q3 = true;
+	}
+	function vsefalse3() {
+		if (q3 == false) {
+			b2.style = 'background: red'
+		} else {
+			alert('ты уже ответил')
+		}
+		q3 = true;
+	}
+	function vsefalse3_2(argument) {
+		if (q3 == false) {
+			b3.style = 'background: red'
+		} else {
+			alert('ты уже ответил')
+		}
+		q3 = true;
+	}
+	function vsegotovo(argument) {
+		if (answercount == 3) {
+			alert('у меня для тебя плохие новости, ты МАТ ВЕЙ')
+		} else if (answercount == 2) {
+			alert('"поздравляю" ты МАТВЕЙ')
+		} else if (answercount == 1) {
+			alert('ты почти МАТВЕЙ :)')
+		} else if (answercount == 0) {
+			alert('ТЫ точно НЕ МАТВЕЙ, поздравляем!')
+		}
+	}
+</script>
+<body bgcolor="black">
+	<h1 align="center">ТЫ МАТВЕЙ?</h1>
+	<p align="center">
+	<button onclick="vsefalse()" id="bbb" style="">ДА</button> <button onclick="vsefalse_2()" id="bbb2" style="">НЕТ</button> <button onclick="vsetrue()" id="bbb3" style="">ТЫ ДЭБИВ</button>
+	</p>
+	<h1 align="center" style="margin-top: 100px">ТЫ ЖИРНЫЙ?</h1>
+	<p align="center">
+	<button onclick="vsetrue2()" style="" id="bb">ДА</button> <button onclick="vsefalse2()" id="bb2" style="">НЕТ</button> <button onclick="vsefalse2_2()" id="bb3" style="">ТЫ ДЭБИВ</button>
+	</p>
+	<h1 align="center" style="margin-top: 100px">ТВОЯ СРЕДНЯЯ ОЦЕНКА В ШКОЛЕ?</h1>
+	<p align="center">
+	<button onclick="vsetrue3()" id="b" style="">2-3</button> <button onclick="vsefalse3()" id="b2" style="">4</button> <button onclick="vsefalse3_2()" style="" id="b3">5</button>
+	</p>
+	<p align="center"><button style="margin-top: 20px" onclick="vsegotovo()">ЗАКОНЧИТЬ</button></p>
+</body>
+</html>
